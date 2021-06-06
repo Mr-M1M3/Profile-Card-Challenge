@@ -1,0 +1,88 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    font-family: inherit;
+}
+html{
+    min-height: 100vh;
+    min-width: 100vw;
+    font-size: 16px;
+}
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-size: contain, contain;
+    background-position: -30vw -30vh, 60vw 50vh;
+    background-repeat: no-repeat, no-repeat;
+}
+div.card-container{
+    min-height: 50vh;
+    min-width: 30vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.25fr 1.25fr 1fr;
+    gap: 1rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: #fdfdfd;
+    border-radius: 0.99rem;
+    box-shadow: 1px 1px 30px hsl(185, 75%, 39%), -1px -1px 30px hsl(185, 75%, 39%);
+}
+div.card-header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url("../images/bg-pattern-card.svg");
+    border-radius: 0.99rem 0.99rem 0 0;
+}
+img.profile-img{
+    position: relative;
+    top: 50px;
+    left: 0;
+    border: 5px solid #fdfdfd;
+    border-radius: 100%;
+}
+div.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.25rem;
+    border-bottom: 0.75px solid hsl(0, 0%, 59%);
+}
+h2.name{
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+}
+span.age{
+    color:  hsl(227, 10%, 46%);
+    font-weight: normal;
+}
+p.address{
+    color: hsl(227, 10%, 46%);
+}
+div.card-footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem;
+    text-align: center;
+}
+div.footer-item{
+    margin: 0.5rem;
+}
+div.footer-item h2{
+    color:hsl(229, 23%, 23%);
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+div.footer-item p{
+    color: hsl(227, 10%, 46%);
+    font-size: 1rem;
+}
